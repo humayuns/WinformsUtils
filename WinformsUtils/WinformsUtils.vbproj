@@ -78,6 +78,12 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="GenerateThumbnailsForFolder.Designer.vb">
+      <DependentUpon>GenerateThumbnailsForFolder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GenerateThumbnailsForFolder.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="GetPixelExamples.Designer.vb">
       <DependentUpon>GetPixelExamples.vb</DependentUpon>
     </Compile>
