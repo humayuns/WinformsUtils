@@ -122,6 +122,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GenerateThumbnailsForFolder.resx">
+      <DependentUpon>GenerateThumbnailsForFolder.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GetPixelExamples.resx">
       <DependentUpon>GetPixelExamples.vb</DependentUpon>
     </EmbeddedResource>
