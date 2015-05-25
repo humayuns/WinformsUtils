@@ -41,7 +41,7 @@ Partial Class Form1
         'ListBox1
         '
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Items.AddRange(New Object() {"Image Resize", "Flash Window", "Windows 8 Toast Notificaiton", "Clickthough form", "Desktop Child Window", "Media Player", "Transparent PNG", "Capture Webcam Feed"})
+        Me.ListBox1.Items.AddRange(New Object() {"Image Resize", "Flash Window", "Windows 8 Toast Notificaiton", "Clickthough form", "Desktop Child Window", "Media Player", "Transparent PNG", "Capture Webcam Feed", "Timers", "Threads"})
         Me.ListBox1.Location = New System.Drawing.Point(12, 100)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(150, 342)
