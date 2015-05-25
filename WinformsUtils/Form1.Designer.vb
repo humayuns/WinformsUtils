@@ -25,6 +25,7 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.btnGenerateThumbnails = New System.Windows.Forms.Button()
+        Me.btnWebcamFeed = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -40,7 +41,7 @@ Partial Class Form1
         'ListBox1
         '
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Items.AddRange(New Object() {"Image Resize", "Flash Window", "Windows 8 Toast Notificaiton", "Clickthough form", "Desktop Child Window", "Media Player", "Transparent PNG"})
+        Me.ListBox1.Items.AddRange(New Object() {"Image Resize", "Flash Window", "Windows 8 Toast Notificaiton", "Clickthough form", "Desktop Child Window", "Media Player", "Transparent PNG", "Capture Webcam Feed"})
         Me.ListBox1.Location = New System.Drawing.Point(12, 100)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(150, 342)
@@ -55,11 +56,21 @@ Partial Class Form1
         Me.btnGenerateThumbnails.Text = "Generate Thumbnails"
         Me.btnGenerateThumbnails.UseVisualStyleBackColor = True
         '
+        'btnWebcamFeed
+        '
+        Me.btnWebcamFeed.Location = New System.Drawing.Point(168, 129)
+        Me.btnWebcamFeed.Name = "btnWebcamFeed"
+        Me.btnWebcamFeed.Size = New System.Drawing.Size(140, 23)
+        Me.btnWebcamFeed.TabIndex = 3
+        Me.btnWebcamFeed.Text = "Webcam Feed"
+        Me.btnWebcamFeed.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(846, 458)
+        Me.Controls.Add(Me.btnWebcamFeed)
         Me.Controls.Add(Me.btnGenerateThumbnails)
         Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.Label1)
@@ -72,5 +83,6 @@ Partial Class Form1
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
     Friend WithEvents btnGenerateThumbnails As System.Windows.Forms.Button
+    Friend WithEvents btnWebcamFeed As System.Windows.Forms.Button
 
 End Class
