@@ -7,4 +7,8 @@
     Private Sub btnWebcamFeed_Click(sender As Object, e As EventArgs) Handles btnWebcamFeed.Click
         WebcamFeed.Show()
     End Sub
+
+    Private Sub btnJSONEditor_Click(sender As Object, e As EventArgs) Handles btnJSONEditor.Click
+        JSONEditor.Show()
+    End Sub
 End Class

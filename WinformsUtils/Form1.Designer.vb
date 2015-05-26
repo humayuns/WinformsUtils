@@ -26,6 +26,7 @@ Partial Class Form1
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.btnGenerateThumbnails = New System.Windows.Forms.Button()
         Me.btnWebcamFeed = New System.Windows.Forms.Button()
+        Me.btnJSONEditor = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -65,11 +66,21 @@ Partial Class Form1
         Me.btnWebcamFeed.Text = "Webcam Feed"
         Me.btnWebcamFeed.UseVisualStyleBackColor = True
         '
+        'btnJSONEditor
+        '
+        Me.btnJSONEditor.Location = New System.Drawing.Point(168, 158)
+        Me.btnJSONEditor.Name = "btnJSONEditor"
+        Me.btnJSONEditor.Size = New System.Drawing.Size(140, 23)
+        Me.btnJSONEditor.TabIndex = 4
+        Me.btnJSONEditor.Text = "JSON Editor"
+        Me.btnJSONEditor.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(846, 458)
+        Me.Controls.Add(Me.btnJSONEditor)
         Me.Controls.Add(Me.btnWebcamFeed)
         Me.Controls.Add(Me.btnGenerateThumbnails)
         Me.Controls.Add(Me.ListBox1)
@@ -84,5 +95,6 @@ Partial Class Form1
     Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
     Friend WithEvents btnGenerateThumbnails As System.Windows.Forms.Button
     Friend WithEvents btnWebcamFeed As System.Windows.Forms.Button
+    Friend WithEvents btnJSONEditor As System.Windows.Forms.Button
 
 End Class
