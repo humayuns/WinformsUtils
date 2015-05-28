@@ -129,6 +129,12 @@
     <Compile Include="WebcamFeed.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="WebContent.Designer.vb">
+      <DependentUpon>WebContent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WebContent.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
@@ -157,6 +163,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WebcamFeed.resx">
       <DependentUpon>WebcamFeed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebContent.resx">
+      <DependentUpon>WebContent.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
