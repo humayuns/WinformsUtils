@@ -27,6 +27,7 @@ Partial Class Form1
         Me.btnGenerateThumbnails = New System.Windows.Forms.Button()
         Me.btnWebcamFeed = New System.Windows.Forms.Button()
         Me.btnJSONEditor = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -42,7 +43,7 @@ Partial Class Form1
         'ListBox1
         '
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Items.AddRange(New Object() {"Image Resize", "Flash Window", "Windows 8 Toast Notificaiton", "Clickthough form", "Desktop Child Window", "Media Player", "Transparent PNG", "Capture Webcam Feed", "Timers", "Threads", "JSON Editor"})
+        Me.ListBox1.Items.AddRange(New Object() {"Image Resize", "Flash Window", "Windows 8 Toast Notificaiton", "Clickthough form", "Desktop Child Window", "Media Player", "Transparent PNG", "Capture Webcam Feed", "Timers", "Threads", "JSON Editor", "Object-Oriented", "Visual UI Designer", "Diagram Designer"})
         Me.ListBox1.Location = New System.Drawing.Point(12, 100)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(150, 342)
@@ -75,11 +76,21 @@ Partial Class Form1
         Me.btnJSONEditor.Text = "JSON Editor"
         Me.btnJSONEditor.UseVisualStyleBackColor = True
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(168, 187)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(140, 23)
+        Me.Button1.TabIndex = 5
+        Me.Button1.Text = "Object-Oriented"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(846, 458)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnJSONEditor)
         Me.Controls.Add(Me.btnWebcamFeed)
         Me.Controls.Add(Me.btnGenerateThumbnails)
@@ -96,5 +107,6 @@ Partial Class Form1
     Friend WithEvents btnGenerateThumbnails As System.Windows.Forms.Button
     Friend WithEvents btnWebcamFeed As System.Windows.Forms.Button
     Friend WithEvents btnJSONEditor As System.Windows.Forms.Button
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 
 End Class
