@@ -27,6 +27,7 @@ Partial Class Form1
         Me.btnGenerateThumbnails = New System.Windows.Forms.Button()
         Me.btnWebcamFeed = New System.Windows.Forms.Button()
         Me.btnJSONEditor = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -75,11 +76,21 @@ Partial Class Form1
         Me.btnJSONEditor.Text = "JSON Editor"
         Me.btnJSONEditor.UseVisualStyleBackColor = True
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(168, 187)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(140, 23)
+        Me.Button1.TabIndex = 5
+        Me.Button1.Text = "Chat System"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(846, 458)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnJSONEditor)
         Me.Controls.Add(Me.btnWebcamFeed)
         Me.Controls.Add(Me.btnGenerateThumbnails)
@@ -96,5 +107,6 @@ Partial Class Form1
     Friend WithEvents btnGenerateThumbnails As System.Windows.Forms.Button
     Friend WithEvents btnWebcamFeed As System.Windows.Forms.Button
     Friend WithEvents btnJSONEditor As System.Windows.Forms.Button
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 
 End Class
