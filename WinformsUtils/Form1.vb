@@ -11,4 +11,8 @@
     Private Sub btnJSONEditor_Click(sender As Object, e As EventArgs) Handles btnJSONEditor.Click
         JSONEditor.Show()
     End Sub
+
+    Private Sub btnLoadWebContent_Click(sender As Object, e As EventArgs) Handles btnLoadWebContent.Click
+        WebContent.Show()
+    End Sub
 End Class

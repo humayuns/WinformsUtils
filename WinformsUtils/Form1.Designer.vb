@@ -28,7 +28,7 @@ Partial Class Form1
         Me.btnWebcamFeed = New System.Windows.Forms.Button()
         Me.btnJSONEditor = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnLoadWebContent = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -86,21 +86,21 @@ Partial Class Form1
         Me.Button1.Text = "Chat System"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnLoadWebContent
         '
-        Me.Button2.Location = New System.Drawing.Point(168, 216)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(140, 23)
-        Me.Button2.TabIndex = 6
-        Me.Button2.Text = "Load Web Content"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnLoadWebContent.Location = New System.Drawing.Point(168, 216)
+        Me.btnLoadWebContent.Name = "btnLoadWebContent"
+        Me.btnLoadWebContent.Size = New System.Drawing.Size(140, 23)
+        Me.btnLoadWebContent.TabIndex = 6
+        Me.btnLoadWebContent.Text = "Load Web Content"
+        Me.btnLoadWebContent.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(846, 458)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.btnLoadWebContent)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnJSONEditor)
         Me.Controls.Add(Me.btnWebcamFeed)
@@ -119,6 +119,6 @@ Partial Class Form1
     Friend WithEvents btnWebcamFeed As System.Windows.Forms.Button
     Friend WithEvents btnJSONEditor As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents btnLoadWebContent As System.Windows.Forms.Button
 
 End Class
