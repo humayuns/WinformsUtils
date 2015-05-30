@@ -4,10 +4,13 @@ Imports System.IO
 Public Class WebContent
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim tClient As WebClient = New WebClient
 
-        Dim tImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(TextBox1.Text)))
 
-        PictureBox1.Image = tImage
+        PictureBox1.Image = GetImageFromUrl(TextBox1.Text)
     End Sub
+
+    Private Function GetImageFromUrl(url As String) As Drawing.Image
+        Dim tClient As WebClient = New WebClient
+        Return Bitmap.FromStream(New MemoryStream(tClient.DownloadData(TextBox1.Text)))
+    End Function
 End Class
