@@ -29,6 +29,7 @@ Partial Class Form1
         Me.btnJSONEditor = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.btnLoadWebContent = New System.Windows.Forms.Button()
+        Me.btnLoadWebContentText = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -95,11 +96,21 @@ Partial Class Form1
         Me.btnLoadWebContent.Text = "Load Web Content"
         Me.btnLoadWebContent.UseVisualStyleBackColor = True
         '
+        'btnLoadWebContentText
+        '
+        Me.btnLoadWebContentText.Location = New System.Drawing.Point(314, 216)
+        Me.btnLoadWebContentText.Name = "btnLoadWebContentText"
+        Me.btnLoadWebContentText.Size = New System.Drawing.Size(140, 23)
+        Me.btnLoadWebContentText.TabIndex = 7
+        Me.btnLoadWebContentText.Text = "Load Web Content Text"
+        Me.btnLoadWebContentText.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(846, 458)
+        Me.Controls.Add(Me.btnLoadWebContentText)
         Me.Controls.Add(Me.btnLoadWebContent)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnJSONEditor)
@@ -120,5 +131,6 @@ Partial Class Form1
     Friend WithEvents btnJSONEditor As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents btnLoadWebContent As System.Windows.Forms.Button
+    Friend WithEvents btnLoadWebContentText As System.Windows.Forms.Button
 
 End Class

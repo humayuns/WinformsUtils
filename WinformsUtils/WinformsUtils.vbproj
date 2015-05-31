@@ -135,6 +135,12 @@
     <Compile Include="WebContent.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="WebContentText.Designer.vb">
+      <DependentUpon>WebContentText.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WebContentText.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
@@ -166,6 +172,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WebContent.resx">
       <DependentUpon>WebContent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebContentText.resx">
+      <DependentUpon>WebContentText.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

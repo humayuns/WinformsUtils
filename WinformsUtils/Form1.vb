@@ -15,4 +15,8 @@
     Private Sub btnLoadWebContent_Click(sender As Object, e As EventArgs) Handles btnLoadWebContent.Click
         WebContent.Show()
     End Sub
+
+    Private Sub btnLoadWebContentText_Click(sender As Object, e As EventArgs) Handles btnLoadWebContentText.Click
+        WebContentText.Show()
+    End Sub
 End Class
