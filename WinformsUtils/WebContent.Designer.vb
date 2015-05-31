@@ -24,7 +24,10 @@ Partial Class WebContent
     Private Sub InitializeComponent()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnLoadImage = New System.Windows.Forms.Button()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.btnAdd = New System.Windows.Forms.Button()
+        Me.btnRemove = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -32,35 +35,64 @@ Partial Class WebContent
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.White
         Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(176, 12)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(533, 311)
+        Me.PictureBox1.Size = New System.Drawing.Size(369, 277)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(12, 329)
+        Me.TextBox1.Location = New System.Drawing.Point(12, 295)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(452, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(533, 20)
         Me.TextBox1.TabIndex = 1
         '
-        'Button1
+        'btnLoadImage
         '
-        Me.Button1.Location = New System.Drawing.Point(470, 329)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Load Image"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnLoadImage.Location = New System.Drawing.Point(133, 321)
+        Me.btnLoadImage.Name = "btnLoadImage"
+        Me.btnLoadImage.Size = New System.Drawing.Size(75, 23)
+        Me.btnLoadImage.TabIndex = 2
+        Me.btnLoadImage.Text = "Load Image"
+        Me.btnLoadImage.UseVisualStyleBackColor = True
+        '
+        'ListBox1
+        '
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.Location = New System.Drawing.Point(12, 12)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(158, 277)
+        Me.ListBox1.TabIndex = 3
+        '
+        'btnAdd
+        '
+        Me.btnAdd.Location = New System.Drawing.Point(12, 321)
+        Me.btnAdd.Name = "btnAdd"
+        Me.btnAdd.Size = New System.Drawing.Size(48, 23)
+        Me.btnAdd.TabIndex = 4
+        Me.btnAdd.Text = "Add"
+        Me.btnAdd.UseVisualStyleBackColor = True
+        '
+        'btnRemove
+        '
+        Me.btnRemove.Location = New System.Drawing.Point(66, 321)
+        Me.btnRemove.Name = "btnRemove"
+        Me.btnRemove.Size = New System.Drawing.Size(61, 23)
+        Me.btnRemove.TabIndex = 5
+        Me.btnRemove.Text = "Remove"
+        Me.btnRemove.UseVisualStyleBackColor = True
         '
         'WebContent
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(557, 365)
-        Me.Controls.Add(Me.Button1)
+        Me.ClientSize = New System.Drawing.Size(557, 354)
+        Me.Controls.Add(Me.btnRemove)
+        Me.Controls.Add(Me.btnAdd)
+        Me.Controls.Add(Me.ListBox1)
+        Me.Controls.Add(Me.btnLoadImage)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "WebContent"
@@ -72,5 +104,8 @@ Partial Class WebContent
     End Sub
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnLoadImage As System.Windows.Forms.Button
+    Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
+    Friend WithEvents btnAdd As System.Windows.Forms.Button
+    Friend WithEvents btnRemove As System.Windows.Forms.Button
 End Class
