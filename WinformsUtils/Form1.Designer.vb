@@ -30,6 +30,7 @@ Partial Class Form1
         Me.Button1 = New System.Windows.Forms.Button()
         Me.btnLoadWebContent = New System.Windows.Forms.Button()
         Me.btnLoadWebContentText = New System.Windows.Forms.Button()
+        Me.btnPlotEquation = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -45,7 +46,7 @@ Partial Class Form1
         'ListBox1
         '
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Items.AddRange(New Object() {"Image Resize", "Flash Window", "Windows 8 Toast Notificaiton", "Clickthough form", "Desktop Child Window", "Media Player", "Transparent PNG", "Capture Webcam Feed", "Timers", "Threads", "JSON Editor", "Web Browser Control", "Tray Icon", "Object-Oriented", "Visual UI Designer", "Diagram Designer", "Load Web Content", "Visual Programming"})
+        Me.ListBox1.Items.AddRange(New Object() {"Image Resize", "Flash Window", "Windows 8 Toast Notificaiton", "Clickthough form", "Desktop Child Window", "Media Player", "Transparent PNG", "Capture Webcam Feed", "Timers", "Threads", "JSON Editor", "Web Browser Control", "Tray Icon", "Object-Oriented", "Visual UI Designer", "Diagram Designer", "Load Web Content", "Visual Programming", "Plot Equation"})
         Me.ListBox1.Location = New System.Drawing.Point(12, 100)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(150, 342)
@@ -105,11 +106,21 @@ Partial Class Form1
         Me.btnLoadWebContentText.Text = "Load Web Content Text"
         Me.btnLoadWebContentText.UseVisualStyleBackColor = True
         '
+        'btnPlotEquation
+        '
+        Me.btnPlotEquation.Location = New System.Drawing.Point(168, 245)
+        Me.btnPlotEquation.Name = "btnPlotEquation"
+        Me.btnPlotEquation.Size = New System.Drawing.Size(140, 23)
+        Me.btnPlotEquation.TabIndex = 8
+        Me.btnPlotEquation.Text = "Plot Equation"
+        Me.btnPlotEquation.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(846, 458)
+        Me.Controls.Add(Me.btnPlotEquation)
         Me.Controls.Add(Me.btnLoadWebContentText)
         Me.Controls.Add(Me.btnLoadWebContent)
         Me.Controls.Add(Me.Button1)
@@ -132,5 +143,6 @@ Partial Class Form1
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents btnLoadWebContent As System.Windows.Forms.Button
     Friend WithEvents btnLoadWebContentText As System.Windows.Forms.Button
+    Friend WithEvents btnPlotEquation As System.Windows.Forms.Button
 
 End Class
