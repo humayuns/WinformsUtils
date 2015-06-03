@@ -31,6 +31,7 @@ Partial Class Form1
         Me.btnLoadWebContent = New System.Windows.Forms.Button()
         Me.btnLoadWebContentText = New System.Windows.Forms.Button()
         Me.btnPlotEquation = New System.Windows.Forms.Button()
+        Me.btnDBAccess = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -115,11 +116,21 @@ Partial Class Form1
         Me.btnPlotEquation.Text = "Plot Equation"
         Me.btnPlotEquation.UseVisualStyleBackColor = True
         '
+        'btnDBAccess
+        '
+        Me.btnDBAccess.Location = New System.Drawing.Point(168, 274)
+        Me.btnDBAccess.Name = "btnDBAccess"
+        Me.btnDBAccess.Size = New System.Drawing.Size(140, 23)
+        Me.btnDBAccess.TabIndex = 9
+        Me.btnDBAccess.Text = "DB Access"
+        Me.btnDBAccess.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(846, 458)
+        Me.Controls.Add(Me.btnDBAccess)
         Me.Controls.Add(Me.btnPlotEquation)
         Me.Controls.Add(Me.btnLoadWebContentText)
         Me.Controls.Add(Me.btnLoadWebContent)
@@ -144,5 +155,6 @@ Partial Class Form1
     Friend WithEvents btnLoadWebContent As System.Windows.Forms.Button
     Friend WithEvents btnLoadWebContentText As System.Windows.Forms.Button
     Friend WithEvents btnPlotEquation As System.Windows.Forms.Button
+    Friend WithEvents btnDBAccess As System.Windows.Forms.Button
 
 End Class

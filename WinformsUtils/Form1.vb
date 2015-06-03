@@ -23,4 +23,8 @@
     Private Sub btnPlotEquation_Click(sender As Object, e As EventArgs) Handles btnPlotEquation.Click
         PlotEquation.Show()
     End Sub
+
+    Private Sub btnDBAccess_Click(sender As Object, e As EventArgs) Handles btnDBAccess.Click
+        DBAccess.Show()
+    End Sub
 End Class
