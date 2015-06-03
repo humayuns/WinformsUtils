@@ -19,4 +19,8 @@
     Private Sub btnLoadWebContentText_Click(sender As Object, e As EventArgs) Handles btnLoadWebContentText.Click
         WebContentText.Show()
     End Sub
+
+    Private Sub btnPlotEquation_Click(sender As Object, e As EventArgs) Handles btnPlotEquation.Click
+        PlotEquation.Show()
+    End Sub
 End Class
