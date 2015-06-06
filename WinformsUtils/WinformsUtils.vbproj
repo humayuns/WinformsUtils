@@ -129,6 +129,12 @@
     <Compile Include="PlotEquation.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="RichTextBoxSamples.Designer.vb">
+      <DependentUpon>RichTextBoxSamples.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RichTextBoxSamples.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ScreenCapture.Designer.vb">
       <DependentUpon>ScreenCapture.vb</DependentUpon>
     </Compile>
@@ -181,6 +187,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PlotEquation.resx">
       <DependentUpon>PlotEquation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RichTextBoxSamples.resx">
+      <DependentUpon>RichTextBoxSamples.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ScreenCapture.resx">
       <DependentUpon>ScreenCapture.vb</DependentUpon>

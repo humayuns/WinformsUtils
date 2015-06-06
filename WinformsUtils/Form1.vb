@@ -27,4 +27,8 @@
     Private Sub btnDBAccess_Click(sender As Object, e As EventArgs) Handles btnDBAccess.Click
         DBAccess.Show()
     End Sub
+
+    Private Sub btnRichTextBox_Click(sender As Object, e As EventArgs) Handles btnRichTextBox.Click
+        RichTextBoxSamples.Show()
+    End Sub
 End Class

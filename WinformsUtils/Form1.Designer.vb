@@ -32,6 +32,7 @@ Partial Class Form1
         Me.btnLoadWebContentText = New System.Windows.Forms.Button()
         Me.btnPlotEquation = New System.Windows.Forms.Button()
         Me.btnDBAccess = New System.Windows.Forms.Button()
+        Me.btnRichTextBox = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -125,11 +126,21 @@ Partial Class Form1
         Me.btnDBAccess.Text = "DB Access"
         Me.btnDBAccess.UseVisualStyleBackColor = True
         '
+        'btnRichTextBox
+        '
+        Me.btnRichTextBox.Location = New System.Drawing.Point(168, 303)
+        Me.btnRichTextBox.Name = "btnRichTextBox"
+        Me.btnRichTextBox.Size = New System.Drawing.Size(140, 23)
+        Me.btnRichTextBox.TabIndex = 10
+        Me.btnRichTextBox.Text = "RichTextBox"
+        Me.btnRichTextBox.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(846, 458)
+        Me.ClientSize = New System.Drawing.Size(790, 489)
+        Me.Controls.Add(Me.btnRichTextBox)
         Me.Controls.Add(Me.btnDBAccess)
         Me.Controls.Add(Me.btnPlotEquation)
         Me.Controls.Add(Me.btnLoadWebContentText)
@@ -156,5 +167,6 @@ Partial Class Form1
     Friend WithEvents btnLoadWebContentText As System.Windows.Forms.Button
     Friend WithEvents btnPlotEquation As System.Windows.Forms.Button
     Friend WithEvents btnDBAccess As System.Windows.Forms.Button
+    Friend WithEvents btnRichTextBox As System.Windows.Forms.Button
 
 End Class
