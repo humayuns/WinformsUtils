@@ -64,6 +64,10 @@
         End Try
     End Sub
 
+    Private Sub DrawPixel(x As Integer, y As Integer)
+
+    End Sub
+
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         DrawInPicture(PictureBox1, Color.Black)
     End Sub
