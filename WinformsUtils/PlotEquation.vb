@@ -50,7 +50,26 @@
         End Try
     End Sub
 
+    Private Sub DrawLine(x1 As Integer, y1 As Integer, x2 As Integer, y2 As Integer)
+        Try
+            Dim BMP As Bitmap = New Bitmap(PictureBox1.Image)
+            Dim G As Graphics = Graphics.FromImage(BMP)
+            Dim P As Pen = New Pen(Brushes.Black)
+            For i = 1 To Count
+                G.DrawLine(P, x1, y1, x2, y2)
+            Next i
+            PictureBox1.Image = BMP
+        Catch
+            MsgBox("clsBorder.DrawInPicture Error")
+        End Try
+    End Sub
+
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         DrawInPicture(PictureBox1, Color.Black)
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        DrawLine(0, PictureBox1.Height / 2, PictureBox1.Width, PictureBox1.Height / 2)
+        DrawLine(PictureBox1.Width / 2, 0, PictureBox1.Width / 2, PictureBox1.Height)
     End Sub
 End Class
