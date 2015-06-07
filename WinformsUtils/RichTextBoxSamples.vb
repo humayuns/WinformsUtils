@@ -6,4 +6,11 @@
         RichTextBox1.SelectionLength = 0
         RichTextBox1.SelectionFont = RichTextBox1.Font
     End Sub
+
+    Private Sub ToolStripButton2_Click(sender As Object, e As EventArgs) Handles ToolStripButton2.Click
+        RichTextBox1.SelectionFont = New Font(RichTextBox1.Font, FontStyle.Italic)
+        RichTextBox1.SelectionStart = RichTextBox1.SelectionStart + RichTextBox1.SelectionLength
+        RichTextBox1.SelectionLength = 0
+        RichTextBox1.SelectionFont = RichTextBox1.Font
+    End Sub
 End Class
