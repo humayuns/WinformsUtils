@@ -33,6 +33,7 @@ Partial Class Form1
         Me.btnPlotEquation = New System.Windows.Forms.Button()
         Me.btnDBAccess = New System.Windows.Forms.Button()
         Me.btnRichTextBox = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -135,11 +136,21 @@ Partial Class Form1
         Me.btnRichTextBox.Text = "RichTextBox"
         Me.btnRichTextBox.UseVisualStyleBackColor = True
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(168, 332)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(140, 23)
+        Me.Button2.TabIndex = 11
+        Me.Button2.Text = "Get Pixel Color"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(790, 489)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.btnRichTextBox)
         Me.Controls.Add(Me.btnDBAccess)
         Me.Controls.Add(Me.btnPlotEquation)
@@ -168,5 +179,6 @@ Partial Class Form1
     Friend WithEvents btnPlotEquation As System.Windows.Forms.Button
     Friend WithEvents btnDBAccess As System.Windows.Forms.Button
     Friend WithEvents btnRichTextBox As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
 
 End Class
