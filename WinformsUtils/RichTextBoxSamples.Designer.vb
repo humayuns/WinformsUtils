@@ -28,6 +28,8 @@ Partial Class RichTextBoxSamples
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -75,11 +77,25 @@ Partial Class RichTextBoxSamples
         Me.ToolStripButton2.Size = New System.Drawing.Size(36, 22)
         Me.ToolStripButton2.Text = "Italic"
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(25, 323)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 3
+        Me.Button1.Text = "Add Image"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
         'RichTextBoxSamples
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(650, 350)
+        Me.ClientSize = New System.Drawing.Size(650, 364)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.RichTextBox1)
@@ -96,4 +112,6 @@ Partial Class RichTextBoxSamples
     Friend WithEvents ToolStrip1 As System.Windows.Forms.ToolStrip
     Friend WithEvents ToolStripButton1 As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStripButton2 As System.Windows.Forms.ToolStripButton
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
 End Class

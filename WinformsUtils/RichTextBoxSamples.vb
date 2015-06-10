@@ -13,4 +13,26 @@
         RichTextBox1.SelectionLength = 0
         RichTextBox1.SelectionFont = RichTextBox1.Font
     End Sub
+
+
+    ' ref: http://www.codeproject.com/Articles/4544/Insert-Plain-Text-and-Images-into-RichTextBox-at-R
+
+    ' TRichTextBox – A universal RichTextBox which can display animated images and more
+    ' http://www.codeproject.com/Articles/134358/TRichTextBox-A-universal-RichTextBox-which-can-dis
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        If OpenFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
+            Dim lstrFile As String = OpenFileDialog1.FileName
+            Dim myBitmap As New Bitmap(lstrFile)
+            ' Copy the bitmap to the clipboard.
+            Clipboard.SetDataObject(myBitmap)
+            ' Get the format for the object type.
+            Dim myFormat As DataFormats.Format = DataFormats.GetFormat(DataFormats.Bitmap)
+            ' After verifying that the data can be pasted, paste
+            If RichTextBox1.CanPaste(myFormat) Then
+                RichTextBox1.Paste(myFormat)
+            Else
+                MessageBox.Show("The data format that you attempted site" + " is not supportedby this control.")
+            End If
+        End If
+    End Sub
 End Class
