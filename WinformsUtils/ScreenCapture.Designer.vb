@@ -22,13 +22,16 @@ Partial Class ScreenCapture
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(178, 145)
+        Me.Button1.Location = New System.Drawing.Point(180, 111)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(182, 23)
         Me.Button1.TabIndex = 0
@@ -37,18 +40,32 @@ Partial Class ScreenCapture
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(178, 174)
+        Me.Button2.Location = New System.Drawing.Point(180, 140)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(182, 23)
         Me.Button2.TabIndex = 1
         Me.Button2.Text = "Take Screenshot with Mimimize"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(180, 169)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(182, 23)
+        Me.Button3.TabIndex = 2
+        Me.Button3.Text = "Take Screenshot Delayed"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Timer1
+        '
+        Me.Timer1.Interval = 1000
+        '
         'ScreenCapture
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(539, 355)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Name = "ScreenCapture"
@@ -58,4 +75,6 @@ Partial Class ScreenCapture
     End Sub
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents Timer1 As System.Windows.Forms.Timer
 End Class
