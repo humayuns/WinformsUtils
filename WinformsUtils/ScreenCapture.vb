@@ -20,4 +20,9 @@ Public Class ScreenCapture
         image.Save(filename, System.Drawing.Imaging.ImageFormat.Png)
     End Sub
 
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Me.WindowState = FormWindowState.Minimized
+        CaptureScreen(0, 0, Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height, "C:\Users\Humayun\Desktop")
+        Me.WindowState = FormWindowState.Normal
+    End Sub
 End Class

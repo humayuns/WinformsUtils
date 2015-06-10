@@ -35,4 +35,8 @@
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         GetPixelExamples.Show()
     End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        ScreenCapture.Show()
+    End Sub
 End Class
