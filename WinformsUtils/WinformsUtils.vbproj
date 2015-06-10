@@ -70,6 +70,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChatForm.Designer.vb">
+      <DependentUpon>ChatForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChatForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DBAccess.Designer.vb">
       <DependentUpon>DBAccess.vb</DependentUpon>
     </Compile>
@@ -141,6 +147,7 @@
     <Compile Include="ScreenCapture.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="RADFunctions.vb" />
     <Compile Include="WebcamFeed.Designer.vb">
       <DependentUpon>WebcamFeed.vb</DependentUpon>
     </Compile>
@@ -161,6 +168,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ChatForm.resx">
+      <DependentUpon>ChatForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DBAccess.resx">
       <DependentUpon>DBAccess.vb</DependentUpon>
     </EmbeddedResource>
