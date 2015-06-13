@@ -43,4 +43,8 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         ChatForm.Show()
     End Sub
+
+    Private Sub btnTrayIcon_Click(sender As Object, e As EventArgs) Handles btnTrayIcon.Click
+        TrayIconForm.Show()
+    End Sub
 End Class

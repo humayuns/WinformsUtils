@@ -148,6 +148,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="RADFunctions.vb" />
+    <Compile Include="TrayIconForm.Designer.vb">
+      <DependentUpon>TrayIconForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TrayIconForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="WebcamFeed.Designer.vb">
       <DependentUpon>WebcamFeed.vb</DependentUpon>
     </Compile>
@@ -203,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ScreenCapture.resx">
       <DependentUpon>ScreenCapture.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayIconForm.resx">
+      <DependentUpon>TrayIconForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WebcamFeed.resx">
       <DependentUpon>WebcamFeed.vb</DependentUpon>
