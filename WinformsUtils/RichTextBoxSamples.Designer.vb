@@ -30,6 +30,9 @@ Partial Class RichTextBoxSamples
         Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.btnOpen = New System.Windows.Forms.Button()
+        Me.btnSave = New System.Windows.Forms.Button()
+        Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -90,11 +93,31 @@ Partial Class RichTextBoxSamples
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
+        'btnOpen
+        '
+        Me.btnOpen.Location = New System.Drawing.Point(106, 323)
+        Me.btnOpen.Name = "btnOpen"
+        Me.btnOpen.Size = New System.Drawing.Size(75, 23)
+        Me.btnOpen.TabIndex = 4
+        Me.btnOpen.Text = "Open"
+        Me.btnOpen.UseVisualStyleBackColor = True
+        '
+        'btnSave
+        '
+        Me.btnSave.Location = New System.Drawing.Point(187, 323)
+        Me.btnSave.Name = "btnSave"
+        Me.btnSave.Size = New System.Drawing.Size(75, 23)
+        Me.btnSave.TabIndex = 5
+        Me.btnSave.Text = "Save"
+        Me.btnSave.UseVisualStyleBackColor = True
+        '
         'RichTextBoxSamples
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(650, 364)
+        Me.Controls.Add(Me.btnSave)
+        Me.Controls.Add(Me.btnOpen)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.ListBox1)
@@ -114,4 +137,7 @@ Partial Class RichTextBoxSamples
     Friend WithEvents ToolStripButton2 As System.Windows.Forms.ToolStripButton
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
+    Friend WithEvents btnOpen As System.Windows.Forms.Button
+    Friend WithEvents btnSave As System.Windows.Forms.Button
+    Friend WithEvents SaveFileDialog1 As System.Windows.Forms.SaveFileDialog
 End Class

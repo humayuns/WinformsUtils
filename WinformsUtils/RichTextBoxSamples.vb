@@ -35,4 +35,16 @@
             End If
         End If
     End Sub
+
+    Private Sub btnOpen_Click(sender As Object, e As EventArgs) Handles btnOpen.Click
+        If OpenFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
+            RichTextBox1.LoadFile(OpenFileDialog1.FileName)
+        End If
+    End Sub
+
+    Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
+        If SaveFileDialog1.ShowDialog() = Windows.Forms.DialogResult.OK Then
+            RichTextBox1.SaveFile(SaveFileDialog1.FileName)
+        End If
+    End Sub
 End Class
