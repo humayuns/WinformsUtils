@@ -70,6 +70,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AsyncWebPhotoViewer.Designer.vb">
+      <DependentUpon>AsyncWebPhotoViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AsyncWebPhotoViewer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="ChatForm.Designer.vb">
       <DependentUpon>ChatForm.vb</DependentUpon>
     </Compile>
@@ -174,6 +180,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AsyncWebPhotoViewer.resx">
+      <DependentUpon>AsyncWebPhotoViewer.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChatForm.resx">
       <DependentUpon>ChatForm.vb</DependentUpon>
     </EmbeddedResource>

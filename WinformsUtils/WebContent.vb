@@ -34,4 +34,7 @@ Public Class WebContent
     End Sub
 
  
+    Private Sub btnAsyncLoadImage_Click(sender As Object, e As EventArgs) Handles btnAsyncLoadImage.Click
+        AsyncWebPhotoViewer1.LoadPhoto(TextBox1.Text)
+    End Sub
 End Class

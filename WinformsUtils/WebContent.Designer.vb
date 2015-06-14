@@ -28,6 +28,8 @@ Partial Class WebContent
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.btnRemove = New System.Windows.Forms.Button()
+        Me.btnAsyncLoadImage = New System.Windows.Forms.Button()
+        Me.AsyncWebPhotoViewer1 = New WinformsUtils.AsyncWebPhotoViewer()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -84,11 +86,30 @@ Partial Class WebContent
         Me.btnRemove.Text = "Remove"
         Me.btnRemove.UseVisualStyleBackColor = True
         '
+        'btnAsyncLoadImage
+        '
+        Me.btnAsyncLoadImage.Location = New System.Drawing.Point(214, 321)
+        Me.btnAsyncLoadImage.Name = "btnAsyncLoadImage"
+        Me.btnAsyncLoadImage.Size = New System.Drawing.Size(113, 23)
+        Me.btnAsyncLoadImage.TabIndex = 7
+        Me.btnAsyncLoadImage.Text = "Load Image Async"
+        Me.btnAsyncLoadImage.UseVisualStyleBackColor = True
+        '
+        'AsyncWebPhotoViewer1
+        '
+        Me.AsyncWebPhotoViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.AsyncWebPhotoViewer1.Location = New System.Drawing.Point(12, 350)
+        Me.AsyncWebPhotoViewer1.Name = "AsyncWebPhotoViewer1"
+        Me.AsyncWebPhotoViewer1.Size = New System.Drawing.Size(533, 283)
+        Me.AsyncWebPhotoViewer1.TabIndex = 6
+        '
         'WebContent
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(557, 354)
+        Me.ClientSize = New System.Drawing.Size(560, 644)
+        Me.Controls.Add(Me.btnAsyncLoadImage)
+        Me.Controls.Add(Me.AsyncWebPhotoViewer1)
         Me.Controls.Add(Me.btnRemove)
         Me.Controls.Add(Me.btnAdd)
         Me.Controls.Add(Me.ListBox1)
@@ -108,4 +129,6 @@ Partial Class WebContent
     Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
     Friend WithEvents btnAdd As System.Windows.Forms.Button
     Friend WithEvents btnRemove As System.Windows.Forms.Button
+    Friend WithEvents AsyncWebPhotoViewer1 As WinformsUtils.AsyncWebPhotoViewer
+    Friend WithEvents btnAsyncLoadImage As System.Windows.Forms.Button
 End Class
