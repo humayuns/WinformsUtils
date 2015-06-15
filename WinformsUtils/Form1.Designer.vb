@@ -36,6 +36,7 @@ Partial Class Form1
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.btnTrayIcon = New System.Windows.Forms.Button()
+        Me.btnNetVersion = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -165,11 +166,21 @@ Partial Class Form1
         Me.btnTrayIcon.Text = "Tray Icon"
         Me.btnTrayIcon.UseVisualStyleBackColor = True
         '
+        'btnNetVersion
+        '
+        Me.btnNetVersion.Location = New System.Drawing.Point(168, 419)
+        Me.btnNetVersion.Name = "btnNetVersion"
+        Me.btnNetVersion.Size = New System.Drawing.Size(140, 23)
+        Me.btnNetVersion.TabIndex = 14
+        Me.btnNetVersion.Text = ".NET Version"
+        Me.btnNetVersion.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(790, 489)
+        Me.Controls.Add(Me.btnNetVersion)
         Me.Controls.Add(Me.btnTrayIcon)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
@@ -204,5 +215,6 @@ Partial Class Form1
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents btnTrayIcon As System.Windows.Forms.Button
+    Friend WithEvents btnNetVersion As System.Windows.Forms.Button
 
 End Class

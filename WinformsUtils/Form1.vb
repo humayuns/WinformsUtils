@@ -47,4 +47,8 @@
     Private Sub btnTrayIcon_Click(sender As Object, e As EventArgs) Handles btnTrayIcon.Click
         TrayIconForm.Show()
     End Sub
+
+    Private Sub btnNetVersion_Click(sender As Object, e As EventArgs) Handles btnNetVersion.Click
+        NetVersion.Show()
+    End Sub
 End Class
