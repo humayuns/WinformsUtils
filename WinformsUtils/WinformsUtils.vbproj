@@ -76,6 +76,12 @@
     <Compile Include="AdvancedTextBox.vb">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="AdvancedTextBoxTest.Designer.vb">
+      <DependentUpon>AdvancedTextBoxTest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdvancedTextBoxTest.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="AsyncWebPhotoViewer.Designer.vb">
       <DependentUpon>AsyncWebPhotoViewer.vb</DependentUpon>
     </Compile>
@@ -199,6 +205,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AdvancedTextBoxTest.resx">
+      <DependentUpon>AdvancedTextBoxTest.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AsyncWebPhotoViewer.resx">
       <DependentUpon>AsyncWebPhotoViewer.vb</DependentUpon>
     </EmbeddedResource>

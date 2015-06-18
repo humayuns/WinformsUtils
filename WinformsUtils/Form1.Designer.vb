@@ -39,6 +39,7 @@ Partial Class Form1
         Me.btnTrayIcon = New System.Windows.Forms.Button()
         Me.btnNetVersion = New System.Windows.Forms.Button()
         Me.btnAutocorrectText = New System.Windows.Forms.Button()
+        Me.btnAdvancedTextBox = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -186,11 +187,21 @@ Partial Class Form1
         Me.btnAutocorrectText.Text = "Autocorrect Text"
         Me.btnAutocorrectText.UseVisualStyleBackColor = True
         '
+        'btnAdvancedTextBox
+        '
+        Me.btnAdvancedTextBox.Location = New System.Drawing.Point(314, 129)
+        Me.btnAdvancedTextBox.Name = "btnAdvancedTextBox"
+        Me.btnAdvancedTextBox.Size = New System.Drawing.Size(140, 23)
+        Me.btnAdvancedTextBox.TabIndex = 16
+        Me.btnAdvancedTextBox.Text = "AdvancedTextBox"
+        Me.btnAdvancedTextBox.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(790, 489)
+        Me.Controls.Add(Me.btnAdvancedTextBox)
         Me.Controls.Add(Me.btnAutocorrectText)
         Me.Controls.Add(Me.btnNetVersion)
         Me.Controls.Add(Me.btnTrayIcon)
@@ -230,5 +241,6 @@ Partial Class Form1
     Friend WithEvents btnTrayIcon As System.Windows.Forms.Button
     Friend WithEvents btnNetVersion As System.Windows.Forms.Button
     Friend WithEvents btnAutocorrectText As System.Windows.Forms.Button
+    Friend WithEvents btnAdvancedTextBox As System.Windows.Forms.Button
 
 End Class

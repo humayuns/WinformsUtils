@@ -55,4 +55,8 @@
     Private Sub btnAutocorrectText_Click(sender As Object, e As EventArgs) Handles btnAutocorrectText.Click
         AutocorrectForm.Show()
     End Sub
+
+    Private Sub btnAdvancedTextBox_Click(sender As Object, e As EventArgs) Handles btnAdvancedTextBox.Click
+        AdvancedTextBoxTest.Show()
+    End Sub
 End Class
