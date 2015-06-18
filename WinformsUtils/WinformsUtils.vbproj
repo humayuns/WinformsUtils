@@ -79,6 +79,12 @@
     <Compile Include="AsyncWebPhotoViewer.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="AutocorrectForm.Designer.vb">
+      <DependentUpon>AutocorrectForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AutocorrectForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ChatForm.Designer.vb">
       <DependentUpon>ChatForm.vb</DependentUpon>
     </Compile>
@@ -192,6 +198,9 @@
   <ItemGroup>
     <EmbeddedResource Include="AsyncWebPhotoViewer.resx">
       <DependentUpon>AsyncWebPhotoViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutocorrectForm.resx">
+      <DependentUpon>AutocorrectForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChatForm.resx">
       <DependentUpon>ChatForm.vb</DependentUpon>

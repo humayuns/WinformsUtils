@@ -51,4 +51,8 @@
     Private Sub btnNetVersion_Click(sender As Object, e As EventArgs) Handles btnNetVersion.Click
         NetVersion.Show()
     End Sub
+
+    Private Sub btnAutocorrectText_Click(sender As Object, e As EventArgs) Handles btnAutocorrectText.Click
+        AutocorrectForm.Show()
+    End Sub
 End Class

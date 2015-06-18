@@ -38,6 +38,7 @@ Partial Class Form1
         Me.Button3 = New System.Windows.Forms.Button()
         Me.btnTrayIcon = New System.Windows.Forms.Button()
         Me.btnNetVersion = New System.Windows.Forms.Button()
+        Me.btnAutocorrectText = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -176,11 +177,21 @@ Partial Class Form1
         Me.btnNetVersion.Text = ".NET Version"
         Me.btnNetVersion.UseVisualStyleBackColor = True
         '
+        'btnAutocorrectText
+        '
+        Me.btnAutocorrectText.Location = New System.Drawing.Point(314, 100)
+        Me.btnAutocorrectText.Name = "btnAutocorrectText"
+        Me.btnAutocorrectText.Size = New System.Drawing.Size(140, 23)
+        Me.btnAutocorrectText.TabIndex = 15
+        Me.btnAutocorrectText.Text = "Autocorrect Text"
+        Me.btnAutocorrectText.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(790, 489)
+        Me.Controls.Add(Me.btnAutocorrectText)
         Me.Controls.Add(Me.btnNetVersion)
         Me.Controls.Add(Me.btnTrayIcon)
         Me.Controls.Add(Me.Button3)
@@ -218,5 +229,6 @@ Partial Class Form1
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents btnTrayIcon As System.Windows.Forms.Button
     Friend WithEvents btnNetVersion As System.Windows.Forms.Button
+    Friend WithEvents btnAutocorrectText As System.Windows.Forms.Button
 
 End Class
