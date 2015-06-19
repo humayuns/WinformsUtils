@@ -11,7 +11,8 @@
     <AssemblyName>WinformsUtils</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -208,6 +209,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AdvancedTextBox.resx">
+      <DependentUpon>AdvancedTextBox.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdvancedTextBoxTest.resx">
       <DependentUpon>AdvancedTextBoxTest.vb</DependentUpon>
     </EmbeddedResource>
@@ -280,12 +284,18 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CSCode\CSCode.csproj">
       <Project>{b54d712e-8660-45fc-9111-f8401b934619}</Project>
       <Name>CSCode</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WindowsControlLibrary\WindowsControlLibrary.vbproj">
+      <Project>{7c303e71-7f3f-443b-89f8-7a62713180ff}</Project>
+      <Name>WindowsControlLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
