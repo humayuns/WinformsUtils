@@ -1,4 +1,9 @@
-﻿Public Class AdvancedTextBox
+﻿
+<ToolboxBitmap(GetType(TextBox))>
+Public Class AdvancedTextBox
     Inherits TextBox
+
+
+
 
 End Class
