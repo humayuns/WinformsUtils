@@ -293,9 +293,9 @@
       <Project>{b54d712e-8660-45fc-9111-f8401b934619}</Project>
       <Name>CSCode</Name>
     </ProjectReference>
-    <ProjectReference Include="..\WindowsControlLibrary\WindowsControlLibrary.vbproj">
+    <ProjectReference Include="..\WindowsControlLibrary\ControlLibrary.vbproj">
       <Project>{7c303e71-7f3f-443b-89f8-7a62713180ff}</Project>
-      <Name>WindowsControlLibrary</Name>
+      <Name>ControlLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
