@@ -72,6 +72,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
     </Compile>
+    <Compile Include="NewTextBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="UserControl1.vb">
       <SubType>UserControl</SubType>
     </Compile>

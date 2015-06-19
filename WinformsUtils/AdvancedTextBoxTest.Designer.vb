@@ -27,7 +27,7 @@ Partial Class AdvancedTextBoxTest
         '
         'AdvancedTextBox1
         '
-        Me.AdvancedTextBox1.Location = New System.Drawing.Point(133, 100)
+        Me.AdvancedTextBox1.Location = New System.Drawing.Point(163, 70)
         Me.AdvancedTextBox1.Name = "AdvancedTextBox1"
         Me.AdvancedTextBox1.Size = New System.Drawing.Size(100, 20)
         Me.AdvancedTextBox1.TabIndex = 0
