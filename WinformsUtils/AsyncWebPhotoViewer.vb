@@ -1,6 +1,7 @@
 ﻿Imports System.Net
 Imports System.IO
 
+<ToolboxBitmap("C:\Users\Humayun\Desktop\AsyncWebPhotoViewer.ico")>
 Public Class AsyncWebPhotoViewer
 
 
