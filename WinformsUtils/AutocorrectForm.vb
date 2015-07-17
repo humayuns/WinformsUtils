@@ -11,6 +11,10 @@
             AutoCorrect(" I ", " i ".Length)
         End If
 
+        If Strings.Left(TextBox1.Text, 2) = "i " Then
+            AutoCorrect("I ", "i ".Length)
+        End If
+
         If TextBox1.Text.Contains(" havent ") Then
             AutoCorrect(" haven't ", " havent ".Length)
         End If
