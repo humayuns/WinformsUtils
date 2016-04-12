@@ -118,6 +118,7 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormExtensionMethods.vb" />
     <Compile Include="GenerateThumbnailsForFolder.Designer.vb">
       <DependentUpon>GenerateThumbnailsForFolder.vb</DependentUpon>
     </Compile>
