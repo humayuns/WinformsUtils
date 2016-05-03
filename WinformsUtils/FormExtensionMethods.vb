@@ -9,6 +9,7 @@ Module FormExtensionMethods
         End Using
     End Sub
 
+    <Extension()>
     Sub PSet(form As Form, pen As Pen, x As Integer, y As Integer)
         Using g = form.CreateGraphics()
             g.DrawRectangle(pen, x, y, 1, 1)
