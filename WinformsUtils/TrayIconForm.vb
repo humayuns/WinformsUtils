@@ -9,7 +9,6 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        NotifyIcon1.Visible = True
-        NotifyIcon1.ShowBalloonTip(1)
+        NotifyIcon1.ShowBalloonTip(1, "test", "test", ToolTipIcon.None)
     End Sub
 End Class

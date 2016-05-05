@@ -27,8 +27,8 @@ Partial Class TrayIconForm
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.ShowToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.ContextMenuStrip1.SuspendLayout()
-        Me.SuspendLayout()
+        Me.ContextMenuStrip1.SuspendLayout
+        Me.SuspendLayout
         '
         'NotifyIcon1
         '
@@ -37,7 +37,7 @@ Partial Class TrayIconForm
         Me.NotifyIcon1.BalloonTipTitle = "test"
         Me.NotifyIcon1.ContextMenuStrip = Me.ContextMenuStrip1
         Me.NotifyIcon1.Text = "NotifyIcon1"
-        Me.NotifyIcon1.Visible = True
+        Me.NotifyIcon1.Visible = true
         '
         'ContextMenuStrip1
         '
@@ -48,7 +48,7 @@ Partial Class TrayIconForm
         'ShowToolStripMenuItem
         '
         Me.ShowToolStripMenuItem.Name = "ShowToolStripMenuItem"
-        Me.ShowToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ShowToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
         Me.ShowToolStripMenuItem.Text = "Show"
         '
         'Button1
@@ -57,21 +57,21 @@ Partial Class TrayIconForm
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(114, 23)
         Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Show Tray Icon"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.Text = "Show BalloonTip"
+        Me.Button1.UseVisualStyleBackColor = true
         '
         'TrayIconForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(539, 346)
         Me.Controls.Add(Me.Button1)
         Me.Name = "TrayIconForm"
         Me.Text = "TrayIconForm"
-        Me.ContextMenuStrip1.ResumeLayout(False)
-        Me.ResumeLayout(False)
+        Me.ContextMenuStrip1.ResumeLayout(false)
+        Me.ResumeLayout(false)
 
-    End Sub
+End Sub
     Friend WithEvents NotifyIcon1 As System.Windows.Forms.NotifyIcon
     Friend WithEvents ContextMenuStrip1 As System.Windows.Forms.ContextMenuStrip
     Friend WithEvents ShowToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
