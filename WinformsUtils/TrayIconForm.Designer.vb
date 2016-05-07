@@ -53,9 +53,9 @@ Partial Class TrayIconForm
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(188, 152)
+        Me.Button1.Location = New System.Drawing.Point(186, 138)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(114, 23)
+        Me.Button1.Size = New System.Drawing.Size(167, 23)
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "Show BalloonTip"
         Me.Button1.UseVisualStyleBackColor = true
