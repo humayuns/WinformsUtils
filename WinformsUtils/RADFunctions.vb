@@ -1,7 +1,7 @@
-﻿Public Class RADFunctions
-    Public Shared Function GetImageFromUrl(url As String) As Drawing.Image
-        Dim tClient As Net.WebClient = New Net.WebClient
-        Return Bitmap.FromStream(New IO.MemoryStream(tClient.DownloadData(url)))
+﻿Public Class RadFunctions
+    Public Shared Function GetImageFromUrl(url As String) As Image
+        Dim tClient = New Net.WebClient
+        Return Image.FromStream(New IO.MemoryStream(tClient.DownloadData(url)))
     End Function
 
     Public Shared Sub CreateFolderIfNotExists(path As String)
