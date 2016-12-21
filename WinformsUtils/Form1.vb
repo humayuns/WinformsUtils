@@ -59,4 +59,8 @@
     Private Sub btnAdvancedTextBox_Click(sender As Object, e As EventArgs) Handles btnAdvancedTextBox.Click
         AdvancedTextBoxTest.Show()
     End Sub
+
+    Private Sub ButtonTextBoxWithSymbols_Click(sender As Object, e As EventArgs) Handles ButtonTextBoxWithSymbols.Click
+        FormTextBoxWithSymbols.Show()
+    End Sub
 End Class

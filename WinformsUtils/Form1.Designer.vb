@@ -41,6 +41,7 @@ Partial Class Form1
         Me.btnAutocorrectText = New System.Windows.Forms.Button()
         Me.btnAdvancedTextBox = New System.Windows.Forms.Button()
         Me.btnContainerControls = New System.Windows.Forms.Button()
+        Me.ButtonTextBoxWithSymbols = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -206,11 +207,21 @@ Partial Class Form1
         Me.btnContainerControls.Text = "Container Controls"
         Me.btnContainerControls.UseVisualStyleBackColor = True
         '
+        'ButtonTextBoxWithSymbols
+        '
+        Me.ButtonTextBoxWithSymbols.Location = New System.Drawing.Point(314, 245)
+        Me.ButtonTextBoxWithSymbols.Name = "ButtonTextBoxWithSymbols"
+        Me.ButtonTextBoxWithSymbols.Size = New System.Drawing.Size(140, 23)
+        Me.ButtonTextBoxWithSymbols.TabIndex = 18
+        Me.ButtonTextBoxWithSymbols.Text = "TextBoxWithSymbols"
+        Me.ButtonTextBoxWithSymbols.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(790, 489)
+        Me.Controls.Add(Me.ButtonTextBoxWithSymbols)
         Me.Controls.Add(Me.btnContainerControls)
         Me.Controls.Add(Me.btnAdvancedTextBox)
         Me.Controls.Add(Me.btnAutocorrectText)
@@ -254,5 +265,5 @@ Partial Class Form1
     Friend WithEvents btnAutocorrectText As System.Windows.Forms.Button
     Friend WithEvents btnAdvancedTextBox As System.Windows.Forms.Button
     Friend WithEvents btnContainerControls As System.Windows.Forms.Button
-
+    Friend WithEvents ButtonTextBoxWithSymbols As Button
 End Class

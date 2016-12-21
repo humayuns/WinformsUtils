@@ -110,7 +110,7 @@
     <Compile Include="DBAccess.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FlashWindow.vb" />
+    <Compile Include="Code\FlashWindow.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -118,7 +118,13 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormExtensionMethods.vb" />
+    <Compile Include="Code\FormExtensionMethods.vb" />
+    <Compile Include="FormTextBoxWithSymbols.designer.vb">
+      <DependentUpon>FormTextBoxWithSymbols.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTextBoxWithSymbols.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="GenerateThumbnailsForFolder.Designer.vb">
       <DependentUpon>GenerateThumbnailsForFolder.vb</DependentUpon>
     </Compile>
@@ -183,7 +189,7 @@
     <Compile Include="ScreenCapture.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RADFunctions.vb" />
+    <Compile Include="Code\RADFunctions.vb" />
     <Compile Include="TrayIconForm.Designer.vb">
       <DependentUpon>TrayIconForm.vb</DependentUpon>
     </Compile>
@@ -230,6 +236,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTextBoxWithSymbols.resx">
+      <DependentUpon>FormTextBoxWithSymbols.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GenerateThumbnailsForFolder.resx">
       <DependentUpon>GenerateThumbnailsForFolder.vb</DependentUpon>
