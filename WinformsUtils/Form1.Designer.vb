@@ -213,7 +213,7 @@ Partial Class Form1
         Me.ButtonTextBoxWithSymbols.Name = "ButtonTextBoxWithSymbols"
         Me.ButtonTextBoxWithSymbols.Size = New System.Drawing.Size(140, 23)
         Me.ButtonTextBoxWithSymbols.TabIndex = 18
-        Me.ButtonTextBoxWithSymbols.Text = "TextBoxWithSymbols"
+        Me.ButtonTextBoxWithSymbols.Text = "★ TextBoxWithSymbols"
         Me.ButtonTextBoxWithSymbols.UseVisualStyleBackColor = True
         '
         'Form1
