@@ -1,15 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WinformsUtils", "WinformsUtils\WinformsUtils.vbproj", "{C8D8B605-E111-4694-8357-7DD00D83B94B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSCode", "CSCode\CSCode.csproj", "{B54D712E-8660-45FC-9111-F8401B934619}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ControlLibrary", "WindowsControlLibrary\ControlLibrary.vbproj", "{7C303E71-7F3F-443B-89F8-7A62713180FF}"
-EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WebAPI", "WebAPI\WebAPI.vbproj", "{E26AE131-5874-4473-921A-F2DD46F948FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +27,6 @@ Global
 		{7C303E71-7F3F-443B-89F8-7A62713180FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C303E71-7F3F-443B-89F8-7A62713180FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C303E71-7F3F-443B-89F8-7A62713180FF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E26AE131-5874-4473-921A-F2DD46F948FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E26AE131-5874-4473-921A-F2DD46F948FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E26AE131-5874-4473-921A-F2DD46F948FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E26AE131-5874-4473-921A-F2DD46F948FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
