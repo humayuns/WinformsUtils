@@ -4,7 +4,8 @@ Windows Forms Utilities project holds common reusable code for Winforms.
 Tools included are:
 
 1. TrayIcon
-2. ...
+2. Load content from web
+3. 
 
 Screenshots: :clock1:
 
